@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Card container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        /* Individual card styling */
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .card-content p {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .card .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .card .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Muhammad Farhansyah</h1>
+            <p>Student | Web Developer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Saya adalah mahasiswa Teknologi Informasi yang memiliki passion dalam pengembangan web, pemrograman, dan eksplorasi teknologi terbaru. Berpengalaman dalam HTML, CSS, JavaScript, serta memiliki pengetahuan dasar tentang backend seperti PHP dan MySQL. Saya terus belajar dan berinovasi untuk menciptakan solusi teknologi yang efektif dan kreatif.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="kakulator.jpg" alt="Project 1">
+                <div class="card-content">
+                    <h3>KALKULATOR</h3>
+                    <p>Membuat web kalkulator sederhana</p>
+                    <a href="kalkulator.html" class="btn">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="login.jpg" alt="Project 2">
+                <div class="card-content">
+                    <h3>Login</h3>
+                    <p>Membuat form login sederhana</p>
+                    <a href="login.html" class="btn">View</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="game.jpg" alt="Project 2">
+                <div class="card-content">
+                    <h3>Snake game</h3>
+                    <p>Membuat mini game</p>
+                    <a href="game.html" class="btn">View</a>
+                </div>
+            </div>
+            <!-- Tambahkan card proyek lainnya -->
+        </div>
+    </section>
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="serti1.jpg" alt="Achievement 1">
+                <div class="card-content">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="serti2.jpg" alt="Achievement 2">
+                <div class="card-content">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="serti3.jpg" alt="Achievement 2">
+                <div class="card-content">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+   
+            <!-- Tambahkan card pencapaian lainnya -->
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div style="background-color: #ddd; border-radius: 8px; width: 100%; height: 20px;">
+                    <div style="background-color: #4CAF50; height: 100%; width: 90%; border-radius: 8px;"></div>
+                </div>
+                <p>90%</p>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div style="background-color: #ddd; border-radius: 8px; width: 100%; height: 20px;">
+                    <div style="background-color: #2196F3; height: 100%; width: 80%; border-radius: 8px;"></div>
+                </div>
+                <p>80%</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div style="background-color: #ddd; border-radius: 8px; width: 100%; height: 20px;">
+                    <div style="background-color: #FFEB3B; height: 100%; width: 75%; border-radius: 8px;"></div>
+                </div>
+                <p>75%</p>
+            </div>
+            <div class="skill">
+                <h3>PHP</h3>
+                <div style="background-color: #ddd; border-radius: 8px; width: 100%; height: 20px;">
+                    <div style="background-color: #9C27B0; height: 100%; width: 70%; border-radius: 8px;"></div>
+                </div>
+                <p>70%</p>
+            </div>
+            <div class="skill">
+                <h3>MySQL</h3>
+                <div style="background-color: #ddd; border-radius: 8px; width: 100%; height: 20px;">
+                    <div style="background-color: #FF5722; height: 100%; width: 60%; border-radius: 8px;"></div>
+                </div>
+                <p>60%</p>
+            </div>
+            <div class="skill">
+                <h3>OBS & Streaming</h3>
+                <div style="background-color: #ddd; border-radius: 8px; width: 100%; height: 20px;">
+                    <div style="background-color: #3F51B5; height: 100%; width: 85%; border-radius: 8px;"></div>
+                </div>
+                <p>85%</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2 style="font-size: 2rem; color: #333; text-align: center; margin-bottom: 20px;">Contact Me</h2>
+        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <p style="font-size: 1.2rem; color: #333;">Feel free to reach out to me via WhatsApp!</p>
+            <a href="https://wa.me/6281384278987" target="_blank" style="display: inline-block; padding: 15px 30px; background-color: #25D366; color: white; font-size: 1.2rem; text-decoration: none; border-radius: 8px; transition: background-color 0.3s;">
+                Contact Me on WhatsApp
+            </a>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Muhammad Farhansyah. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
